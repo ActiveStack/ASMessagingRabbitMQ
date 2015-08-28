@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Date-Revision-yyyymmdd" content="20150827" />
     <meta http-equiv="Content-Language" content="en" />
-    <title>Active Messaging - Rabbit MQ &#x2013; Active Messaging - Rabbit MQ</title>
+    <title>Active Messaging - Rabbit MQ &#x2013; Dependency Information</title>
     <link rel="stylesheet" href="./css/apache-maven-fluido-1.4.min.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <link rel="stylesheet" href="./css/print.css" media="print" />
@@ -88,12 +88,10 @@
         Dependencies</a>
             </li>
                     
-      <li>
+      <li class="active">
   
-                          <a href="dependency-info.html" title="Dependency Information">
-          <span class="none"></span>
-        Dependency Information</a>
-            </li>
+            <a href="#"><span class="none"></span>Dependency Information</a>
+          </li>
                     
       <li>
   
@@ -109,10 +107,12 @@
         Distribution Management</a>
             </li>
                     
-      <li class="active">
+      <li>
   
-            <a href="#"><span class="none"></span>About</a>
-          </li>
+                          <a href="index.html" title="About">
+          <span class="none"></span>
+        About</a>
+            </li>
                     
       <li>
   
@@ -192,59 +192,37 @@
                 
         <div id="bodyColumn"  class="span10" >
                                   
-            <h1>Active Messaging - Rabbit MQ</h1>
-<p>Provides Messaging implementation using RabbitMQ</p>
-<p><a class="externalLink" href="https://circleci.com/gh/ActiveStack/active-messaging-rabbitmq/tree/master"><img src="https://circleci.com/gh/ActiveStack/active-messaging-rabbitmq/tree/master.svg?style=svg" alt="Circle CI" /></a></p>
-
-<ul>
-  
-<li>
-<p>Maven Wrapper:<br /> Normally you instruct users to run the mvn command like the following:</p>
-  
-<div class="source">
-<div class="source"><pre class="prettyprint">$ mvn clean package
-</pre></div></div> But now, with a Maven Wrapper setup, you can instruct users to run wrapper scripts:
-  
-<div class="source">
-<div class="source"><pre class="prettyprint">$ ./mvnw clean package
-</pre></div></div> or
-  
-<div class="source">
-<div class="source"><pre class="prettyprint">$ ./mvnw.cmd clean package
-</pre></div></div> A normal Maven build will be executed with the one important change that if the user doesn&#x2019;t have the necessary  version of Maven specified in <tt>.mvn/wrapper/maven-wrapper.properties</tt> it will be downloaded for the user first.
-<p>(Note: Initial maven-wrapper files were setup as per: <a class="externalLink" href="https://github.com/takari/maven-wrapper">maven-wrapper</a>,  using: <tt>mvn -N io.takari:maven:wrapper</tt>. You may wish to use the same command when creating new projects.)</p></li>
-  
-<li>
-<p>Unit Tests - To run unit tests, using the maven wrapper:</p>
-  
-<div class="source">
-<div class="source"><pre class="prettyprint">$ ./mvnw clean test
-</pre></div></div></li>
-  
-<li>
-<p>Install - To install a local snapshot version of this project, for use only by other local projects, run &#x2018;install&#x2019;:</p>
-  
-<div class="source">
-<div class="source"><pre class="prettyprint">$ ./mvnw clean install
-</pre></div></div></li>
-  
-<li>
-<p>Deploy - To deplopy a public/shared snapshot version of this project, for use by other developers, run &#x2018;deploy&#x2019;. This  will deploy the snapshot to the central snapshot repo. </p>
-<p>NOTE: This requires the configuration steps described in <a class="externalLink" href="http://activestack.github.io/active-parent//publishing.html#deploySnapshot">deploySnapshot</a>. </p>
-<p>Snapshot artifacts will be deployed into repository: <a class="externalLink" href="https://oss.sonatype.org/content/repositories/snapshots">https://oss.sonatype.org/content/repositories/snapshots</a>. </p>
-  
-<div class="source">
-<div class="source"><pre class="prettyprint">$ ./mvnw clean deploy
-</pre></div></div>
-<p>Other developers must activate the <tt>ossrh-snapshot</tt> profile to use this repo and see your snapshot:</p>
-  
-<div class="source">
-<div class="source"><pre class="prettyprint">otherproject$ ./mvnw clean test -Possrh-snapshot
-</pre></div></div></li>
-  
-<li>
-<p>Release - To release a new, stable version of this project to the public maven central repository, follow the steps described in <a class="externalLink" href="http://activestack.github.io/active-parent//publishing.html#releaseToCentral">Release artifacts to OSSRH</a>. </p></li>
-</ul>
+            <div class="section">
+<h2><a name="Dependency_Information"></a>Dependency Information</h2><a name="Dependency_Information"></a>
+<div class="section">
+<h3><a name="Apache_Maven"></a>Apache Maven</h3><a name="Apache_Maven"></a>
+<div class="source"><pre class="prettyprint">&lt;dependency&gt;
+  &lt;groupId&gt;org.activestack&lt;/groupId&gt;
+  &lt;artifactId&gt;active-messaging-rabbitmq&lt;/artifactId&gt;
+  &lt;version&gt;1.0.0-SNAPSHOT&lt;/version&gt;
+&lt;/dependency&gt;</pre></div></div>
+<div class="section">
+<h3><a name="Apache_Buildr"></a>Apache Buildr</h3><a name="Apache_Buildr"></a>
+<div class="source"><pre class="prettyprint">'org.activestack:active-messaging-rabbitmq:jar:1.0.0-SNAPSHOT'</pre></div></div>
+<div class="section">
+<h3><a name="Apache_Ivy"></a>Apache Ivy</h3><a name="Apache_Ivy"></a>
+<div class="source"><pre class="prettyprint">&lt;dependency org=&quot;org.activestack&quot; name=&quot;active-messaging-rabbitmq&quot; rev=&quot;1.0.0-SNAPSHOT&quot;&gt;
+  &lt;artifact name=&quot;active-messaging-rabbitmq&quot; type=&quot;jar&quot; /&gt;
+&lt;/dependency&gt;</pre></div></div>
+<div class="section">
+<h3><a name="Groovy_Grape"></a>Groovy Grape</h3><a name="Groovy_Grape"></a>
+<div class="source"><pre class="prettyprint">@Grapes(
+@Grab(group='org.activestack', module='active-messaging-rabbitmq', version='1.0.0-SNAPSHOT')
+)</pre></div></div>
+<div class="section">
+<h3><a name="Grails"></a>Grails</h3><a name="Grails"></a>
+<div class="source"><pre class="prettyprint">compile 'org.activestack:active-messaging-rabbitmq:1.0.0-SNAPSHOT'</pre></div></div>
+<div class="section">
+<h3><a name="Leiningen"></a>Leiningen</h3><a name="Leiningen"></a>
+<div class="source"><pre class="prettyprint">[org.activestack/active-messaging-rabbitmq &quot;1.0.0-SNAPSHOT&quot;]</pre></div></div>
+<div class="section">
+<h3><a name="SBT"></a>SBT</h3><a name="SBT"></a>
+<div class="source"><pre class="prettyprint">libraryDependencies += &quot;org.activestack&quot; % &quot;active-messaging-rabbitmq&quot; % &quot;1.0.0-SNAPSHOT&quot;</pre></div></div></div>
                   </div>
             </div>
           </div>
