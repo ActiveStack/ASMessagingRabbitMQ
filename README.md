@@ -1,6 +1,6 @@
 
-[![Circle CI](https://circleci.com/gh/ActiveStack/active-framework/tree/master.svg?style=svg)](https://circleci.com/gh/ActiveStack/active-framework/tree/master)
+[![Circle CI](https://circleci.com/gh/ActiveStack/active-messaging-rabbitmq/tree/master.svg?style=svg)](https://circleci.com/gh/ActiveStack/active-messaging-rabbitmq/tree/master)
 
-Provides common interfaces.
+Provides a Messaging implementation using RabbitMQ.
 
-Website: http://activestack.github.io/active-framework/
+Website: http://activestack.github.io/active-messaging-rabbitmq/

@@ -14,7 +14,7 @@
     <packaging>jar</packaging>
 
     <name>Active Messaging - Rabbit MQ</name>
-    <description>Provides common interfaces.</description>
+    <description>Provides Messaging implementation using RabbitMQ</description>
 
     <scm>
         <url>https://github.com/ActiveStack/${project.artifactId}</url>
