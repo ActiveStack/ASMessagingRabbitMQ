@@ -15,6 +15,10 @@
       <item name="${project.parent.name}" href="${project.parent.scm.url}"/>
     </menu>
 
+    <menu name="ELDER PROJECT">
+      <item name="active-framework" href="http://activestack.github.io/active-framework"/>
+    </menu>
+
     <menu ref="reports"/>
   </body>
 
